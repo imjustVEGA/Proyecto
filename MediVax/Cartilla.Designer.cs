@@ -415,7 +415,7 @@
             lblEdad.BackColor = Color.Transparent;
             lblEdad.Font = new Font("Segoe UI", 11.25F);
             lblEdad.ForeColor = SystemColors.ButtonHighlight;
-            lblEdad.Location = new Point(306, 7);
+            lblEdad.Location = new Point(327, 7);
             lblEdad.Name = "lblEdad";
             lblEdad.Size = new Size(50, 20);
             lblEdad.TabIndex = 4;
@@ -451,7 +451,7 @@
             label4.BackColor = Color.Transparent;
             label4.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             label4.ForeColor = SystemColors.ButtonHighlight;
-            label4.Location = new Point(248, 5);
+            label4.Location = new Point(269, 5);
             label4.Name = "label4";
             label4.Size = new Size(52, 21);
             label4.TabIndex = 1;
