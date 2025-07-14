@@ -1,4 +1,4 @@
-namespace MediVax
+nanamespace MediVax
 {
     public partial class Menu : Form
     {
@@ -31,21 +31,20 @@ namespace MediVax
         {
 
         }
-        protected void btnRecomendaciones_Click(object sender, EventArgs e)
-        {
 
-        }
         protected void btnMenu_Click(object sender, EventArgs e)
         {
 
         }
+
         protected void button3_Click(object sender, EventArgs e)
         {
-            // Lógica del evento
+            // LÃ³gica del evento
         }
+
         protected void button4_Click(object sender, EventArgs e)
         {
-            // Lógica del evento
+            // LÃ³gica del evento
         }
 
         private void label6_Click(object sender, EventArgs e)
@@ -68,7 +67,6 @@ namespace MediVax
             Cartilla form1 = new Cartilla();
             form1.Show();
             this.Hide();
-
         }
 
         private void guna2CirclePictureBox2_Click(object sender, EventArgs e)
