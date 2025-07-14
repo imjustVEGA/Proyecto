@@ -1,0 +1,107 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\omana\\source\\repos\\Proyecto\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D75CE7FA-860B-40B4-984F-F645D47CBF95}|MediVax\\MediVax.csproj|c:\\users\\omana\\source\\repos\\proyecto\\medivax\\cartilla.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D75CE7FA-860B-40B4-984F-F645D47CBF95}|MediVax\\MediVax.csproj|solutionrelative:medivax\\cartilla.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D75CE7FA-860B-40B4-984F-F645D47CBF95}|MediVax\\MediVax.csproj|c:\\users\\omana\\source\\repos\\proyecto\\medivax\\registro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D75CE7FA-860B-40B4-984F-F645D47CBF95}|MediVax\\MediVax.csproj|solutionrelative:medivax\\registro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D75CE7FA-860B-40B4-984F-F645D47CBF95}|MediVax\\MediVax.csproj|c:\\users\\omana\\source\\repos\\proyecto\\medivax\\iniciosesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D75CE7FA-860B-40B4-984F-F645D47CBF95}|MediVax\\MediVax.csproj|solutionrelative:medivax\\iniciosesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D75CE7FA-860B-40B4-984F-F645D47CBF95}|MediVax\\MediVax.csproj|c:\\users\\omana\\source\\repos\\proyecto\\medivax\\iniciosesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D75CE7FA-860B-40B4-984F-F645D47CBF95}|MediVax\\MediVax.csproj|solutionrelative:medivax\\iniciosesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D75CE7FA-860B-40B4-984F-F645D47CBF95}|MediVax\\MediVax.csproj|c:\\users\\omana\\source\\repos\\proyecto\\medivax\\consultas\\consulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D75CE7FA-860B-40B4-984F-F645D47CBF95}|MediVax\\MediVax.csproj|solutionrelative:medivax\\consultas\\consulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Consulta.cs",
+              "DocumentMoniker": "C:\\Users\\omana\\source\\repos\\Proyecto\\MediVax\\Consultas\\Consulta.cs",
+              "RelativeDocumentMoniker": "MediVax\\Consultas\\Consulta.cs",
+              "ToolTip": "C:\\Users\\omana\\source\\repos\\Proyecto\\MediVax\\Consultas\\Consulta.cs",
+              "RelativeToolTip": "MediVax\\Consultas\\Consulta.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T13:27:07.253Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Cartilla.cs",
+              "DocumentMoniker": "C:\\Users\\omana\\source\\repos\\Proyecto\\MediVax\\Cartilla.cs",
+              "RelativeDocumentMoniker": "MediVax\\Cartilla.cs",
+              "ToolTip": "C:\\Users\\omana\\source\\repos\\Proyecto\\MediVax\\Cartilla.cs",
+              "RelativeToolTip": "MediVax\\Cartilla.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAuwFoAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T13:23:08.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "InicioSesion.cs",
+              "DocumentMoniker": "C:\\Users\\omana\\source\\repos\\Proyecto\\MediVax\\InicioSesion.cs",
+              "RelativeDocumentMoniker": "MediVax\\InicioSesion.cs",
+              "ToolTip": "C:\\Users\\omana\\source\\repos\\Proyecto\\MediVax\\InicioSesion.cs",
+              "RelativeToolTip": "MediVax\\InicioSesion.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAAABwAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T13:21:40.185Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Registro.cs",
+              "DocumentMoniker": "C:\\Users\\omana\\source\\repos\\Proyecto\\MediVax\\Registro.cs",
+              "RelativeDocumentMoniker": "MediVax\\Registro.cs",
+              "ToolTip": "C:\\Users\\omana\\source\\repos\\Proyecto\\MediVax\\Registro.cs",
+              "RelativeToolTip": "MediVax\\Registro.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAIwD8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T13:21:12.127Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "InicioSesion.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\omana\\source\\repos\\Proyecto\\MediVax\\InicioSesion.cs",
+              "RelativeDocumentMoniker": "MediVax\\InicioSesion.cs",
+              "ToolTip": "C:\\Users\\omana\\source\\repos\\Proyecto\\MediVax\\InicioSesion.cs [Dise\u00F1o]",
+              "RelativeToolTip": "MediVax\\InicioSesion.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T13:06:12.711Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

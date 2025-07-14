@@ -10,11 +10,11 @@ namespace MediVax.Consultas
     internal class Consulta
     {
         private MySqlConnection conex;
-
+        public MySqlConnection Conexion => conex;
         public MySqlConnection Conectar()
         {
             string server = "localhost";
-            string database = "medivax";
+            string database = "medivx";
             string user = "root";
             string pwd = "root";
             string cadenaConexion = $"server={server};database={database};Uid={user};pwd={pwd};";
@@ -45,7 +45,6 @@ namespace MediVax.Consultas
         {
             string consulta = "SELECT * FROM `" + tabla + "`;";
             Conectar();
-            conex.Open();
             MySqlCommand comando = new MySqlCommand(consulta, conex);
             return comando.ExecuteReader();
         }
@@ -64,17 +63,29 @@ namespace MediVax.Consultas
 
      
 
-        public void actualizar(string tabla, string campovalor, string campo, string id)
+        public void actualizar(string tabla, string campovalor, string campo, string ID)
         {
-            string consulta = "UPDATE `" + tabla + "` SET " + campovalor + " WHERE " + campo + " = '" + id + "'; ";
+            string consulta = "UPDATE `" + tabla + "` SET " + campovalor + " WHERE " + campo + " = '" + ID + "'; ";
             Conectar();
-            conex.Open();
             MySqlCommand comando = new MySqlCommand(consulta, conex);
             MySqlDataReader ejecuta;
             ejecuta = comando.ExecuteReader();
             cerrar();
         }
+
+        public void eliminar(string tabla, string campo, string id)
+        {
+            string consulta = $"DELETE FROM `{tabla}` WHERE {campo} = '{id}'";
+            Conectar();
+            MySqlCommand comando = new MySqlCommand(consulta, conex);
+            comando.ExecuteNonQuery();
+            cerrar();
+        }
+
+
+
+
     }
 
-    
+
 }

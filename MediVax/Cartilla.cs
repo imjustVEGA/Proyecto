@@ -9,15 +9,21 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MediVax.Consultas;
 using MySql.Data.MySqlClient;
+using MediVax.Sesion;   
 
 namespace MediVax
 {
     public partial class Cartilla : Form
     {
+        private int pacienteID;
+
         public Cartilla()
         {
+            this.pacienteID = Sesion.Sesion.UsuarioID;
             InitializeComponent();
-            CargarDatosVacunas();
+            Cargardatos(pacienteID);
+            CargarVacunas();
+            CargarDatosPaciente();
         }
 
         private void Cartilla_Load(object sender, EventArgs e)
@@ -32,73 +38,223 @@ namespace MediVax
 
         private void btnMenu_Click(object sender, EventArgs e)
         {
+            this.Hide();
             Menu menu = new Menu();
             menu.Show();
-            this.Hide();
-            this.Close();
-        }
-
-        private void addvac_Click(object sender, EventArgs e)
-        {
-            
 
         }
-        private void CargarDatosVacunas()
+
+
+
+        void btn_save_Click(object sender, EventArgs e)
         {
+            if (cmboxVacunas.SelectedIndex == -1)
+            {
+                MessageBox.Show("Selecciona una vacuna.");
+                return;
+            }
+            string tabla = "aplicaciones";
+            int vacunaID = Convert.ToInt32(cmboxVacunas.SelectedValue);
+            string dosisAplicada = txtdosis.Text;
+            DateTime fechaAplicacion = timepick.Value;
+
+            string campos = "PacienteID, VacunaID, DosisAplicada, FechaAplicacion";
+            string valores = $"{pacienteID}, {vacunaID}, '{dosisAplicada}', '{fechaAplicacion:yyyy-MM-dd}'";
+
             Consulta consulta = new Consulta();
-            string query = "SELECT Nombre, Dosis, Previene, FechaAplic FROM vacuna";
+            consulta.agregar(tabla, campos, valores);
 
-            using (MySqlConnection conexion = consulta.Conectar())
-            {
-                try
-                {
-                    MySqlDataAdapter adapter = new MySqlDataAdapter(query, conexion);
-                    DataTable table = new DataTable();
-                    adapter.Fill(table);
-                    historialvac.DataSource = table;
-
-                    historialvac.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-                    historialvac.ReadOnly = true;
-                    historialvac.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-
-
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Error al cargar datos: " + ex.Message);
-                }
-            }
-        }
-
-        private void btn_save_Click(object sender, EventArgs e)
-        {
-            string nombre = txtnombre.Text;
-            string dosis = txtdosis.Text;
-            string previene = txtprev.Text;
-            string fechaAplicada = timepick.Value.ToString("yyyy-MM-dd");
-            Consulta consulta = new Consulta();
-
-            string tabla = "vacuna";
-            string campos = "Nombre, Dosis, Previene, FechaAplic";
-            string valores = $"'{nombre}', '{dosis}', '{previene}', '{fechaAplicada}'";
-
-            try
-            {
-                consulta.agregar(tabla, campos, valores);
-                MessageBox.Show("Datos registrados exitosamente.");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error al registrar datos: {ex.Message}");
-            }
-
-            historialvac.Refresh();
-
+            MessageBox.Show("Aplicación registrada correctamente.");
+            Cargardatos(pacienteID);
         }
 
         private void guna2CustomGradientPanel2_Paint(object sender, PaintEventArgs e)
         {
 
         }
+        private void Cargardatos(int pacienteID)
+        {
+            try
+            {
+                Consulta consulta = new Consulta();
+                MySqlConnection conexion = consulta.Conectar();
+
+                string query = @"
+            SELECT 
+                v.VacunaID,
+                v.NombreVacuna,
+                a.DosisAplicada,
+                v.Previene,
+                a.FechaAplicacion
+            FROM aplicaciones a
+            JOIN vacunas v ON a.VacunaID = v.VacunaID
+            WHERE a.PacienteID = @id;
+        ";
+
+                MySqlCommand cmd = new MySqlCommand(query, conexion);
+                cmd.Parameters.AddWithValue("@id", pacienteID);
+
+                MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
+                DataTable tabla = new DataTable();
+                adapter.Fill(tabla);
+
+                historialvac.DataSource = tabla;
+
+                consulta.cerrar();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al cargar los datos: " + ex.Message);
+            }
+        }
+        private void CargarVacunas()
+        {
+            try
+            {
+                Consulta consulta = new Consulta();
+                MySqlConnection conexion = consulta.Conectar();
+
+                string query = "SELECT VacunaID, NombreVacuna, Previene FROM vacunas";
+                MySqlCommand cmd = new MySqlCommand(query, conexion);
+                MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
+
+                cmboxVacunas.DataSource = dt;
+                cmboxVacunas.DisplayMember = "NombreVacuna";
+                cmboxVacunas.ValueMember = "VacunaID";
+                cmboxVacunas.SelectedIndex = -1;
+
+                consulta.cerrar();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al cargar vacunas: " + ex.Message);
+            }
+        }
+
+        private void btnRecomendaciones_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Recomendaciones recomendaciones = new Recomendaciones();
+            recomendaciones.Show();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCampanas_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ProximasCamp proximasCamp = new ProximasCamp();
+            proximasCamp.Show();
+        }
+
+        private void btn_edit_Click(object sender, EventArgs e)
+        {
+            if (historialvac.CurrentRow != null)
+            {
+                if (cmboxVacunas.SelectedIndex == -1)
+                {
+                    MessageBox.Show("Selecciona una vacuna.");
+                    return;
+                }
+
+                string tabla = "aplicaciones";
+                int vacunaID = Convert.ToInt32(cmboxVacunas.SelectedValue);
+                string dosisAplicada = txtdosis.Text;
+                DateTime fechaAplicacion = timepick.Value;
+
+                string id = historialvac.CurrentRow.Cells["VacunaID"].Value.ToString();
+
+
+                string camposValores = $"VacunaID = {vacunaID}, DosisAplicada = '{dosisAplicada}', FechaAplicacion = '{fechaAplicacion:yyyy-MM-dd}'";
+
+                string campoClave = "AplicacionID";
+
+                Consulta consulta = new Consulta();
+                consulta.actualizar(tabla, camposValores, campoClave, id);
+
+                MessageBox.Show("Registro actualizado correctamente.");
+                Cargardatos(pacienteID);
+            }
+        }
+
+        private void btn_delete_Click(object sender, EventArgs e)
+             {
+            {
+                if (historialvac.CurrentRow != null)
+                {
+                    DialogResult confirmacion = MessageBox.Show("¿Estás seguro de eliminar este registro?", "Confirmar eliminación", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                    if (confirmacion == DialogResult.Yes)
+                    {
+                       
+                        string tabla = "aplicaciones";
+
+                        string campo = "VacunaID"; 
+
+                        
+                        string id = historialvac.CurrentRow.Cells["VacunaID"].Value.ToString();
+
+                       
+                        Consulta consulta = new Consulta();
+                        consulta.eliminar(tabla, campo, id);
+
+                        MessageBox.Show("Registro eliminado correctamente.");
+                        Cargardatos(pacienteID); 
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Selecciona una fila para borrar.");
+                }
+            }
+
+    }
+
+        private void CargarDatosPaciente()
+        {
+            try
+            {
+                Consulta consulta = new Consulta();
+                consulta.Conectar();
+
+                string query = "SELECT Nombre, Apellido, Edad, Sexo FROM pacientes WHERE pacienteID = @id";
+                MySqlCommand cmd = new MySqlCommand(query, consulta.Conexion);
+                cmd.Parameters.AddWithValue("@id", Sesion.Sesion.UsuarioID);
+
+                MySqlDataReader reader = cmd.ExecuteReader();
+
+                if (reader.Read())
+                {
+                    lblNombre.Text = reader["Nombre"].ToString() + " " + reader["Apellido"].ToString();
+                    lblEdad.Text = reader["Edad"].ToString() + " años";
+                    lblSexo.Text = reader["Sexo"].ToString();
+                }
+                else
+                {
+                    MessageBox.Show("No se encontró el paciente.");
+                }
+
+                reader.Close(); 
+                consulta.cerrar(); 
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al cargar los datos del paciente: " + ex.Message);
+            }
+        }
+
+
+
+
+
+
+
+
     }
 }
+
+

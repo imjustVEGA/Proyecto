@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "erO0PNDPPFM=",
+  "dgSpecHash": "8Rza7iDcG08=",
   "success": true,
-  "projectFilePath": "C:\\Users\\omana\\source\\repos\\MediVax\\MediVax\\MediVax.csproj",
+  "projectFilePath": "C:\\Users\\omana\\Source\\Repos\\Proyecto\\MediVax\\MediVax.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\omana\\.nuget\\packages\\bouncycastle.cryptography\\2.5.1\\bouncycastle.cryptography.2.5.1.nupkg.sha512",
     "C:\\Users\\omana\\.nuget\\packages\\fontawesome\\4.7.0\\fontawesome.4.7.0.nupkg.sha512",
