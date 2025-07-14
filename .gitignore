@@ -1,0 +1,27 @@
+# Visual Studio folders
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+bin/
+obj/
+Debug/
+Release/
+
+
+# NuGet packages
+packages/
+*.nupkg
+project.lock.json
+
+# Logs and temp files
+*.log
+*.tmp
+*.bak
+
+# System files
+Thumbs.db
+ehthumbs.db
