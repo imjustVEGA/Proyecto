@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MediVax")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ce657fe1936758ee772ca441bbcaa709136846d7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6db4fee5e1742e79f984d7fdfbf468096fb13cc2")]
 [assembly: System.Reflection.AssemblyProductAttribute("MediVax")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MediVax")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
