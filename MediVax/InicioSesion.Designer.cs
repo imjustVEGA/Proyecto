@@ -28,19 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InicioSesion));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             label1 = new Label();
             label2 = new Label();
             guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
@@ -53,7 +53,7 @@
             label4 = new Label();
             guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             label3 = new Label();
-            linkLabel1 = new LinkLabel();
+            btnreg = new LinkLabel();
             txtNombre = new Guna.UI2.WinForms.Guna2TextBox();
             txtCURP = new Guna.UI2.WinForms.Guna2TextBox();
             guna2CustomGradientPanel1.SuspendLayout();
@@ -101,12 +101,12 @@
             guna2CustomGradientPanel1.Controls.Add(label4);
             guna2CustomGradientPanel1.Controls.Add(guna2PictureBox1);
             guna2CustomGradientPanel1.Controls.Add(label3);
-            guna2CustomGradientPanel1.Controls.Add(linkLabel1);
+            guna2CustomGradientPanel1.Controls.Add(btnreg);
             guna2CustomGradientPanel1.Controls.Add(txtNombre);
             guna2CustomGradientPanel1.Controls.Add(txtCURP);
             guna2CustomGradientPanel1.Controls.Add(label1);
             guna2CustomGradientPanel1.Controls.Add(label2);
-            guna2CustomGradientPanel1.CustomizableEdges = customizableEdges11;
+            guna2CustomGradientPanel1.CustomizableEdges = customizableEdges23;
             guna2CustomGradientPanel1.Dock = DockStyle.Fill;
             guna2CustomGradientPanel1.FillColor = Color.FromArgb(0, 20, 255);
             guna2CustomGradientPanel1.FillColor2 = Color.FromArgb(0, 159, 254);
@@ -114,7 +114,7 @@
             guna2CustomGradientPanel1.FillColor4 = Color.FromArgb(6, 23, 251);
             guna2CustomGradientPanel1.Location = new Point(0, 0);
             guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
-            guna2CustomGradientPanel1.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            guna2CustomGradientPanel1.ShadowDecoration.CustomizableEdges = customizableEdges24;
             guna2CustomGradientPanel1.Size = new Size(875, 542);
             guna2CustomGradientPanel1.TabIndex = 2;
             guna2CustomGradientPanel1.Paint += guna2CustomGradientPanel1_Paint;
@@ -127,7 +127,7 @@
             guna2CirclePictureBox2.ImageRotate = 0F;
             guna2CirclePictureBox2.Location = new Point(52, 279);
             guna2CirclePictureBox2.Name = "guna2CirclePictureBox2";
-            guna2CirclePictureBox2.ShadowDecoration.CustomizableEdges = customizableEdges1;
+            guna2CirclePictureBox2.ShadowDecoration.CustomizableEdges = customizableEdges13;
             guna2CirclePictureBox2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             guna2CirclePictureBox2.Size = new Size(49, 48);
             guna2CirclePictureBox2.TabIndex = 12;
@@ -141,7 +141,7 @@
             guna2CirclePictureBox1.ImageRotate = 0F;
             guna2CirclePictureBox1.Location = new Point(52, 212);
             guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
-            guna2CirclePictureBox1.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            guna2CirclePictureBox1.ShadowDecoration.CustomizableEdges = customizableEdges14;
             guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             guna2CirclePictureBox1.Size = new Size(49, 48);
             guna2CirclePictureBox1.TabIndex = 11;
@@ -163,7 +163,7 @@
             // 
             btnIngresar.Anchor = AnchorStyles.Top;
             btnIngresar.Cursor = Cursors.Hand;
-            btnIngresar.CustomizableEdges = customizableEdges3;
+            btnIngresar.CustomizableEdges = customizableEdges15;
             btnIngresar.DisabledState.BorderColor = Color.DarkGray;
             btnIngresar.DisabledState.CustomBorderColor = Color.DarkGray;
             btnIngresar.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -173,7 +173,7 @@
             btnIngresar.ForeColor = Color.White;
             btnIngresar.Location = new Point(153, 333);
             btnIngresar.Name = "btnIngresar";
-            btnIngresar.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            btnIngresar.ShadowDecoration.CustomizableEdges = customizableEdges16;
             btnIngresar.Size = new Size(114, 38);
             btnIngresar.TabIndex = 3;
             btnIngresar.Text = "Ingresar";
@@ -222,12 +222,12 @@
             // 
             guna2PictureBox1.Anchor = AnchorStyles.None;
             guna2PictureBox1.BackColor = SystemColors.Control;
-            guna2PictureBox1.CustomizableEdges = customizableEdges5;
+            guna2PictureBox1.CustomizableEdges = customizableEdges17;
             guna2PictureBox1.Image = (Image)resources.GetObject("guna2PictureBox1.Image");
             guna2PictureBox1.ImageRotate = 0F;
             guna2PictureBox1.Location = new Point(436, 0);
             guna2PictureBox1.Name = "guna2PictureBox1";
-            guna2PictureBox1.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            guna2PictureBox1.ShadowDecoration.CustomizableEdges = customizableEdges18;
             guna2PictureBox1.Size = new Size(439, 542);
             guna2PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             guna2PictureBox1.TabIndex = 6;
@@ -247,29 +247,29 @@
             label3.Text = "¿No tiene cuenta?";
             label3.Click += label3_Click;
             // 
-            // linkLabel1
+            // btnreg
             // 
-            linkLabel1.Anchor = AnchorStyles.Top;
-            linkLabel1.AutoSize = true;
-            linkLabel1.BackColor = Color.FromArgb(139, 191, 106);
-            linkLabel1.Cursor = Cursors.Hand;
-            linkLabel1.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            linkLabel1.ForeColor = SystemColors.ControlLightLight;
-            linkLabel1.LinkBehavior = LinkBehavior.HoverUnderline;
-            linkLabel1.LinkColor = Color.White;
-            linkLabel1.Location = new Point(153, 436);
-            linkLabel1.Name = "linkLabel1";
-            linkLabel1.Size = new Size(100, 32);
-            linkLabel1.TabIndex = 4;
-            linkLabel1.TabStop = true;
-            linkLabel1.Text = "Registro";
-            linkLabel1.TextAlign = ContentAlignment.MiddleCenter;
-            linkLabel1.LinkClicked += linkLabel1_LinkClicked;
+            btnreg.Anchor = AnchorStyles.Top;
+            btnreg.AutoSize = true;
+            btnreg.BackColor = Color.FromArgb(139, 191, 106);
+            btnreg.Cursor = Cursors.Hand;
+            btnreg.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnreg.ForeColor = SystemColors.ControlLightLight;
+            btnreg.LinkBehavior = LinkBehavior.HoverUnderline;
+            btnreg.LinkColor = Color.White;
+            btnreg.Location = new Point(153, 436);
+            btnreg.Name = "btnreg";
+            btnreg.Size = new Size(100, 32);
+            btnreg.TabIndex = 4;
+            btnreg.TabStop = true;
+            btnreg.Text = "Registro";
+            btnreg.TextAlign = ContentAlignment.MiddleCenter;
+            btnreg.LinkClicked += linkLabel1_LinkClicked;
             // 
             // txtNombre
             // 
             txtNombre.Anchor = AnchorStyles.Top;
-            txtNombre.CustomizableEdges = customizableEdges7;
+            txtNombre.CustomizableEdges = customizableEdges19;
             txtNombre.DefaultText = "";
             txtNombre.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtNombre.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -283,14 +283,14 @@
             txtNombre.Name = "txtNombre";
             txtNombre.PlaceholderText = "Ingrese su nombre aqui";
             txtNombre.SelectedText = "";
-            txtNombre.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            txtNombre.ShadowDecoration.CustomizableEdges = customizableEdges20;
             txtNombre.Size = new Size(218, 39);
             txtNombre.TabIndex = 3;
             // 
             // txtCURP
             // 
             txtCURP.Anchor = AnchorStyles.Top;
-            txtCURP.CustomizableEdges = customizableEdges9;
+            txtCURP.CustomizableEdges = customizableEdges21;
             txtCURP.DefaultText = "";
             txtCURP.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtCURP.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -304,7 +304,7 @@
             txtCURP.Name = "txtCURP";
             txtCURP.PlaceholderText = "Ingrese su CURP aqui";
             txtCURP.SelectedText = "";
-            txtCURP.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            txtCURP.ShadowDecoration.CustomizableEdges = customizableEdges22;
             txtCURP.Size = new Size(218, 31);
             txtCURP.TabIndex = 2;
             // 
@@ -332,7 +332,7 @@
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Label label3;
-        private LinkLabel linkLabel1;
+        private LinkLabel btnreg;
         private Guna.UI2.WinForms.Guna2TextBox txtNombre;
         private Guna.UI2.WinForms.Guna2TextBox txtCURP;
         private Label label6;

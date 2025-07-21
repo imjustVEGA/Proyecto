@@ -71,9 +71,9 @@
             lblSexo = new Label();
             lblEdad = new Label();
             lblNombre = new Label();
-            label5 = new Label();
-            label4 = new Label();
-            label3 = new Label();
+            labelsexo = new Label();
+            labeledad = new Label();
+            labelnombre = new Label();
             guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             label2 = new Label();
             ((System.ComponentModel.ISupportInitialize)historialvac).BeginInit();
@@ -110,7 +110,9 @@
             historialvac.EnableHeadersVisualStyles = false;
             historialvac.GridColor = SystemColors.MenuText;
             historialvac.Location = new Point(187, 446);
+            historialvac.MultiSelect = false;
             historialvac.Name = "historialvac";
+            historialvac.ReadOnly = true;
             historialvac.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F);
@@ -118,6 +120,7 @@
             dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
             historialvac.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             historialvac.RowHeadersWidth = 51;
+            historialvac.SelectionMode = DataGridViewSelectionMode.CellSelect;
             historialvac.Size = new Size(1000, 294);
             historialvac.TabIndex = 3;
             historialvac.CellContentClick += historialvac_CellContentClick;
@@ -383,9 +386,9 @@
             guna2CustomGradientPanel3.Controls.Add(lblSexo);
             guna2CustomGradientPanel3.Controls.Add(lblEdad);
             guna2CustomGradientPanel3.Controls.Add(lblNombre);
-            guna2CustomGradientPanel3.Controls.Add(label5);
-            guna2CustomGradientPanel3.Controls.Add(label4);
-            guna2CustomGradientPanel3.Controls.Add(label3);
+            guna2CustomGradientPanel3.Controls.Add(labelsexo);
+            guna2CustomGradientPanel3.Controls.Add(labeledad);
+            guna2CustomGradientPanel3.Controls.Add(labelnombre);
             guna2CustomGradientPanel3.CustomizableEdges = customizableEdges15;
             guna2CustomGradientPanel3.FillColor = Color.SteelBlue;
             guna2CustomGradientPanel3.FillColor2 = Color.SteelBlue;
@@ -433,41 +436,41 @@
             lblNombre.TabIndex = 3;
             lblNombre.Text = "label6";
             // 
-            // label5
+            // labelsexo
             // 
-            label5.AutoSize = true;
-            label5.BackColor = Color.Transparent;
-            label5.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label5.ForeColor = SystemColors.ButtonHighlight;
-            label5.Location = new Point(445, 5);
-            label5.Name = "label5";
-            label5.Size = new Size(51, 21);
-            label5.TabIndex = 2;
-            label5.Text = "Sexo:";
+            labelsexo.AutoSize = true;
+            labelsexo.BackColor = Color.Transparent;
+            labelsexo.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            labelsexo.ForeColor = SystemColors.ButtonHighlight;
+            labelsexo.Location = new Point(445, 5);
+            labelsexo.Name = "labelsexo";
+            labelsexo.Size = new Size(51, 21);
+            labelsexo.TabIndex = 2;
+            labelsexo.Text = "Sexo:";
             // 
-            // label4
+            // labeledad
             // 
-            label4.AutoSize = true;
-            label4.BackColor = Color.Transparent;
-            label4.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label4.ForeColor = SystemColors.ButtonHighlight;
-            label4.Location = new Point(269, 5);
-            label4.Name = "label4";
-            label4.Size = new Size(52, 21);
-            label4.TabIndex = 1;
-            label4.Text = "Edad:";
+            labeledad.AutoSize = true;
+            labeledad.BackColor = Color.Transparent;
+            labeledad.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            labeledad.ForeColor = SystemColors.ButtonHighlight;
+            labeledad.Location = new Point(269, 5);
+            labeledad.Name = "labeledad";
+            labeledad.Size = new Size(52, 21);
+            labeledad.TabIndex = 1;
+            labeledad.Text = "Edad:";
             // 
-            // label3
+            // labelnombre
             // 
-            label3.AutoSize = true;
-            label3.BackColor = Color.Transparent;
-            label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.ForeColor = SystemColors.ControlLightLight;
-            label3.Location = new Point(33, 6);
-            label3.Name = "label3";
-            label3.Size = new Size(77, 21);
-            label3.TabIndex = 0;
-            label3.Text = "Nombre:";
+            labelnombre.AutoSize = true;
+            labelnombre.BackColor = Color.Transparent;
+            labelnombre.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            labelnombre.ForeColor = SystemColors.ControlLightLight;
+            labelnombre.Location = new Point(33, 6);
+            labelnombre.Name = "labelnombre";
+            labelnombre.Size = new Size(77, 21);
+            labelnombre.TabIndex = 0;
+            labelnombre.Text = "Nombre:";
             // 
             // guna2Panel2
             // 
@@ -550,8 +553,8 @@
         private Label lblSexo;
         private Label lblEdad;
         private Label lblNombre;
-        private Label label5;
-        private Label label4;
-        private Label label3;
+        private Label labelsexo;
+        private Label labeledad;
+        private Label labelnombre;
     }
 }

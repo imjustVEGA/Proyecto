@@ -58,7 +58,20 @@ namespace MediVax
 
         private void btnmenu_Click(object sender, EventArgs e)
         {
-            
+
+        }
+
+        private void guna2PictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnsalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Sesion.Sesion.UsuarioID = 0;
+            InicioSesion inicioSesion = new InicioSesion();
+            inicioSesion.Show();
         }
     }
 }

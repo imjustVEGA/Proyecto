@@ -117,7 +117,27 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Somos MediVax, una aplicación diseñada para facilitar el seguimiento del esquema de vacunación infantil. Nuestra plataforma permite a padres, tutores y profesionales de la salud registrar, consultar y recibir alertas sobre vacunas, además de proporcionar recomendaciones médicas y campañas de vacunación vigentes.</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="guna2CirclePictureBox4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAJuSURBVGhD7ZhNTxNRFIb5JbdTNgwz1QUtgYXGhYloMCxM
+        sdFIDKGFTVuVgdguNEZI7EJaFMSVwSqaiIm49iPGj2oAv1jQrfgHdEM3RHrMGTsG7mWGzu0sJs15kydN
+        5k57zzOnnU5OSwuFQqFQKBTnMHaglSnaMFO0yx5SqMEfd2KYsYNBvr66omodCS3UuWkYY5Vc7gZ4RbT/
+        DESOnIITA9m66Ymlq21611Yo1D3C1+kY7ARK/NwoQ3X7t6fkC1NwcvAqZIprrkhOvwQ11L3lqjOKoo0Y
+        4+MV3Hj7zy9YWJiHfP6mcHXdMHd3VhDpS0wKV9/i+EDWPC+aLkDm/nfzfOwMU7QEX69tAkH9Gm6IG6PE
+        6up74crK4rYjQ5NP/8kU18z3YW18vbbZKYKd4ItpBLciSO/gFQ9Eaq9eISNinU8i1sZ8MY1AIiRSp8i3
+        ryUol78Ix+3wpcinj2+gI3LIlOHX7PCdyPLyWwh3HoZS6bWw5oSvRGQlrM/zhcjS80Vo1yOQyWThztzM
+        vvC/H1+JqFoYUumLwoPhXvhWBLG+Wh9Kr4S1/fCVCCIr4zsRpCluvxZN8YcoA4mQCIk4IyPS64lIswwf
+        Hj0uwsrKO6EgWdyKDE0sQv+FW3IiOGsdNcb+D+hQBjszM3tbeChEHjycFwour3/etfZs6YkgEk1NQV9i
+        Ym/i181OmBK1Ad2x08kqC+pxvl7b4Mi0XY9sbvxYFwpsFLcdsUhOvwCc/7oamWJUNRzH+e+lUaPCd6AR
+        zp47D11HY2IHHOiJpeSG2FbQHmetgaCe8wrWqt9D+ONOmDUE2hS+PgqFQqFQKFz+Akbbq5btcrN4AAAA
+        AElFTkSuQmCC
+</value>
+  </data>
   <data name="guna2PictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAABgAAAAQACAYAAAAncZJCAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
@@ -2132,6 +2152,11 @@
         AAAAQP3+HwM3zAsC2/dLAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Promover la salud infantil a través de una herramienta tecnológica accesible y confiable que facilite el control del esquema de vacunación, ofreciendo información clara y actualizada para prevenir enfermedades.
+
+</value>
+  </data>
   <data name="guna2CirclePictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -2144,6 +2169,11 @@
         rBbn2qUdL+ZVXSZsnmgPwIyJy39H3k1cnmXMG5da+ybu7WWUJ184P5lo9ZKaOc7EVEdJPK6SuVJDanHM
         29OVDFwCuHFOmIZqZqR38TAIf6JMS0PvTJUoJlS/MhPNhOpHZqKaULnMRDehGjTTiglV1kxrJlRjZlo1
         oRqZkS8UDrYm+XUyMdiqJgaa1DfwlwqjiD0SZgAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>Ser la aplicación líder en gestión de vacunación pediátrica en Latinoamérica, reconocida por su impacto en la prevención de enfermedades y el fortalecimiento del sistema de salud pública mediante la tecnología.
+
 </value>
   </data>
   <data name="guna2CirclePictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

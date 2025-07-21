@@ -167,15 +167,15 @@ namespace MediVax
                 string dosisAplicada = txtdosis.Text;
                 DateTime fechaAplicacion = timepick.Value;
 
-                string id = historialvac.CurrentRow.Cells["VacunaID"].Value.ToString();
+                string ID = historialvac.CurrentRow.Cells["VacunaID"].Value.ToString();
 
 
-                string camposValores = $"VacunaID = {vacunaID}, DosisAplicada = '{dosisAplicada}', FechaAplicacion = '{fechaAplicacion:yyyy-MM-dd}'";
+                string camposvalor = $"VacunaID = {vacunaID}, DosisAplicada = '{dosisAplicada}', FechaAplicacion = '{fechaAplicacion:yyyy-MM-dd}'";
 
-                string campoClave = "AplicacionID";
+                string campo = "VacunaID";
 
                 Consulta consulta = new Consulta();
-                consulta.actualizar(tabla, camposValores, campoClave, id);
+                consulta.actualizar(tabla, camposvalor, campo, ID);
 
                 MessageBox.Show("Registro actualizado correctamente.");
                 Cargardatos(pacienteID);

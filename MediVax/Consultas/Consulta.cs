@@ -61,16 +61,30 @@ namespace MediVax.Consultas
 
         }
 
-     
+
 
         public void actualizar(string tabla, string campovalor, string campo, string ID)
         {
-            string consulta = "UPDATE `" + tabla + "` SET " + campovalor + " WHERE " + campo + " = '" + ID + "'; ";
-            Conectar();
-            MySqlCommand comando = new MySqlCommand(consulta, conex);
-            MySqlDataReader ejecuta;
-            ejecuta = comando.ExecuteReader();
-            cerrar();
+            try
+            {
+                string consulta = $"UPDATE `{tabla}` SET {campovalor} WHERE {campo} = '{ID}'";
+                Conectar();
+                MySqlCommand comando = new MySqlCommand(consulta, conex);
+                int filasAfectadas = comando.ExecuteNonQuery();
+
+                if (filasAfectadas == 0)
+                {
+                    MessageBox.Show("No se encontró el registro a actualizar.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al actualizar: " + ex.Message);
+            }
+            finally
+            {
+                cerrar();
+            }
         }
 
         public void eliminar(string tabla, string campo, string id)
